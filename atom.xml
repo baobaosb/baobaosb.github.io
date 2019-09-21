@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>BaoBao</title>
   
-  <subtitle>努力实现秃头梦</subtitle>
+  <subtitle>努力实现编程梦</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://baobaosb.github.io/"/>
@@ -37,11 +37,11 @@
       <category term="Docker" scheme="http://baobaosb.github.io/categories/Docker/"/>
     
     
+      <category term="Docker" scheme="http://baobaosb.github.io/tags/Docker/"/>
+    
       <category term="容器" scheme="http://baobaosb.github.io/tags/%E5%AE%B9%E5%99%A8/"/>
     
       <category term="linux" scheme="http://baobaosb.github.io/tags/linux/"/>
-    
-      <category term="Docker" scheme="http://baobaosb.github.io/tags/Docker/"/>
     
   </entry>
   
