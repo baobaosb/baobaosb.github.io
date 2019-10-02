@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://baobaosb.github.io/"/>
-  <updated>2019-09-20T09:24:50.326Z</updated>
+  <updated>2019-10-02T12:26:51.613Z</updated>
   <id>http://baobaosb.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker安装与使用</title>
+    <link href="http://baobaosb.github.io/2019/09/21/docker/"/>
+    <id>http://baobaosb.github.io/2019/09/21/docker/</id>
+    <published>2019-09-21T01:21:36.938Z</published>
+    <updated>2019-10-02T12:26:51.613Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.docker.com" target="_blank" rel="noopener">Docker</a>是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p><h2 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a><strong>Docker安装</strong></h2><h3 id="1-使用储存库安装："><a href="#1-使用储存库安装：" class="headerlink" title="1.使用储存库安装："></a>1.使用储存库安装：</h3><ul><li><p>安装所需的包。yum-utils提供了yum-config-manager 效用，并device-mapper-persistent-data和lvm2由需要 devicemapper存储驱动程序。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br></pre></td></tr></table></figure></li><li><p>使用以下命令设置稳定存储库。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br></pre></td></tr></table></figure></li></ul><h3 id="2-安装最新版本的Docker-Engine-社区和容器："><a href="#2-安装最新版本的Docker-Engine-社区和容器：" class="headerlink" title="2.安装最新版本的Docker Engine - 社区和容器："></a>2.安装最新版本的Docker Engine - 社区和容器：</h3><pre><code>$ sudo yum install docker-ce docker-ce-cli containerd.io</code></pre><h3 id="3-启动Docker容器"><a href="#3-启动Docker容器" class="headerlink" title="3.启动Docker容器"></a>3.启动Docker容器</h3><pre><code>$ sudo systemctl start docker</code></pre><h2 id="Docker-Tomcat安装"><a href="#Docker-Tomcat安装" class="headerlink" title="Docker Tomcat安装"></a><strong>Docker Tomcat安装</strong></h2><h3 id="1-安装Tomcat服务器："><a href="#1-安装Tomcat服务器：" class="headerlink" title="1.安装Tomcat服务器："></a>1.安装Tomcat服务器：</h3><ul><li>安装一个名为mycat，端口8080改为13080的Tomcat服务器。<pre><code>$ docker run -d --name  mycat  -p 13080:8080 tomcat:8.0</code></pre></li></ul><h3 id="2-启动Tomcat："><a href="#2-启动Tomcat：" class="headerlink" title="2.启动Tomcat："></a>2.启动Tomcat：</h3><pre><code>$ docker start mycat</code></pre><h3 id="3-打开-http-kansuv-info-13080-来访问Tomcat-kansuv-info改为你的服务器域名或者IP-："><a href="#3-打开-http-kansuv-info-13080-来访问Tomcat-kansuv-info改为你的服务器域名或者IP-：" class="headerlink" title="3.打开 http://kansuv.info:13080 来访问Tomcat (kansuv.info改为你的服务器域名或者IP)："></a>3.打开 <a href="http://kansuv.info:13080" target="_blank" rel="noopener">http://kansuv.info:13080</a> 来访问Tomcat (kansuv.info改为你的服务器域名或者IP)：</h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/tomcat.png" alt="tomcat" title>                </div>                <div class="image-caption">tomcat</div>            </figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.docker.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Docker&lt;/a&gt;是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Wind
+      
+    
+    </summary>
+    
+      <category term="Docker" scheme="http://baobaosb.github.io/categories/Docker/"/>
+    
+    
+      <category term="Docker" scheme="http://baobaosb.github.io/tags/Docker/"/>
+    
+      <category term="容器" scheme="http://baobaosb.github.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+      <category term="linux" scheme="http://baobaosb.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客框架的搭建与使用</title>
