@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>SSM框架整合环境搭建 | BaoBao | 努力实现编程梦</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#03A9F4">
+    
+    
+    <meta name="keywords" content="SSM,环境搭建,idea">
+    <meta name="description" content="SSM（Spring+SpringMVC+MyBatis）框架集由Spring、MyBatis两个开源框架整合而成（SpringMVC是Spring中的部分内容）。常作为数据源较简单的web项目的框架。 SSM整合环境搭建1.新建工程，导入jar包： jdk1.8版本Spring jar包用4.0以上的版本">
+<meta name="keywords" content="SSM,环境搭建,idea">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSM框架整合环境搭建">
+<meta property="og:url" content="http://baobaosb.github.io/2019/10/03/SSM-hj/index.html">
+<meta property="og:site_name" content="BaoBao">
+<meta property="og:description" content="SSM（Spring+SpringMVC+MyBatis）框架集由Spring、MyBatis两个开源框架整合而成（SpringMVC是Spring中的部分内容）。常作为数据源较简单的web项目的框架。 SSM整合环境搭建1.新建工程，导入jar包： jdk1.8版本Spring jar包用4.0以上的版本">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://baobaosb.github.io/img/jar.png">
+<meta property="og:updated_time" content="2019-10-03T02:51:34.886Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SSM框架整合环境搭建">
+<meta name="twitter:description" content="SSM（Spring+SpringMVC+MyBatis）框架集由Spring、MyBatis两个开源框架整合而成（SpringMVC是Spring中的部分内容）。常作为数据源较简单的web项目的框架。 SSM整合环境搭建1.新建工程，导入jar包： jdk1.8版本Spring jar包用4.0以上的版本">
+<meta name="twitter:image" content="http://baobaosb.github.io/img/jar.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="BaoBao" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.13">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">BaoBao</h5>
+          <a href="mailto:1326297913@qq.com" title="1326297913@qq.com" class="mail">1326297913@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives/">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/baobaosb" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom">
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">SSM框架整合环境搭建</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">SSM框架整合环境搭建</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-10-02T16:38:03.441Z" itemprop="datePublished" class="page-time">
+  2019-10-03
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/SSM/">SSM</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SSM整合环境搭建"><span class="post-toc-number">1.</span> <span class="post-toc-text">SSM整合环境搭建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-新建工程，导入jar包："><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.新建工程，导入jar包：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-创建一个springmvc文件："><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.创建一个springmvc文件：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-在web-xml添加springmvc配置"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3.在web.xml添加springmvc配置:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-安装Tomcat服务器："><span class="post-toc-number">1.4.</span> <span class="post-toc-text">1.安装Tomcat服务器：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-安装Tomcat服务器：-1"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">1.安装Tomcat服务器：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-安装Tomcat服务器：-2"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">1.安装Tomcat服务器：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#测试Test"><span class="post-toc-number">2.</span> <span class="post-toc-text">测试Test</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-安装Tomcat服务器：-3"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.安装Tomcat服务器：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-启动Tomcat："><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.启动Tomcat：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-打开-http-kansuv-info-13080-来访问Tomcat-kansuv-info改为你的服务器域名或者IP-："><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3.打开 http://kansuv.info:13080 来访问Tomcat (kansuv.info改为你的服务器域名或者IP)：</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-SSM-hj" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">SSM框架整合环境搭建</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-10-03 00:38:03" datetime="2019-10-02T16:38:03.441Z" itemprop="datePublished">2019-10-03</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/SSM/">SSM</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>SSM（Spring+SpringMVC+MyBatis）框架集由Spring、MyBatis两个开源框架整合而成（SpringMVC是Spring中的部分内容）。常作为数据源较简单的web项目的框架。</p>
+<h2 id="SSM整合环境搭建"><a href="#SSM整合环境搭建" class="headerlink" title="SSM整合环境搭建"></a><strong>SSM整合环境搭建</strong></h2><h3 id="1-新建工程，导入jar包："><a href="#1-新建工程，导入jar包：" class="headerlink" title="1.新建工程，导入jar包："></a>1.新建工程，导入jar包：</h3><ul>
+<li>jdk1.8版本Spring jar包用4.0以上的版本<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/jar.png" alt="jar" title>
+                </div>
+                <div class="image-caption">jar</div>
+            </figure>
+
+
+
+</li>
+</ul>
+<h3 id="2-创建一个springmvc文件："><a href="#2-创建一个springmvc文件：" class="headerlink" title="2.创建一个springmvc文件："></a>2.创建一个springmvc文件：</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;</span><br><span class="line">&lt;beans xmlns=<span class="string">"http://www.springframework.org/schema/beans"</span></span><br><span class="line">       xmlns:xsi=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span> </span><br><span class="line">       xmlns:mvc=<span class="string">"http://www.springframework.org/schema/mvc"</span></span><br><span class="line">       xmlns:context=<span class="string">"http://www.springframework.org/schema/context"</span></span><br><span class="line">       xmlns:aop=<span class="string">"http://www.springframework.org/schema/aop"</span> </span><br><span class="line">       xmlns:tx=<span class="string">"http://www.springframework.org/schema/tx"</span></span><br><span class="line">       xsi:schemaLocation=<span class="string">"http://www.springframework.org/schema/beans</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/beans/spring-beans-3.2.xsd</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/mvc</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/context</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/context/spring-context-3.2.xsd</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/aop</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/aop/spring-aop-3.2.xsd</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/tx</span></span><br><span class="line"><span class="string">      http://www.springframework.org/schema/tx/spring-tx-3.2.xsd"</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- <span class="number">1</span>.配置注解扫描位置 --&gt;</span><br><span class="line">    &lt;context:component-scan base-<span class="keyword">package</span>=<span class="string">"cn.gdyvc.controller"</span> /&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- <span class="number">2</span>.配置注解处理映射--&gt;</span><br><span class="line">    &lt;bean <span class="class"><span class="keyword">class</span></span>=<span class="string">"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"</span>/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--<span class="number">3</span>.配置适配器--&gt;</span><br><span class="line">    &lt;bean <span class="class"><span class="keyword">class</span></span>=<span class="string">"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- <span class="number">4</span>.配置springmvc视图解析器 视图解析器解析的视频路径为：前缀 + 后缀 --&gt;</span><br><span class="line">    &lt;bean</span><br><span class="line">            <span class="class"><span class="keyword">class</span></span>=<span class="string">"org.springframework.web.servlet.view.InternalResourceViewResolver"</span>&gt;</span><br><span class="line">        &lt;property name=<span class="string">"prefix"</span> value=<span class="string">"/WEB-INF/views"</span> /&gt;</span><br><span class="line">        &lt;property name=<span class="string">"suffix"</span> value=<span class="string">".jsp"</span> /&gt;</span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line">&lt;/beans&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-在web-xml添加springmvc配置"><a href="#3-在web-xml添加springmvc配置" class="headerlink" title="3.在web.xml添加springmvc配置:"></a>3.在web.xml添加springmvc配置:</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>DispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 3.0的springmvc 默认加载WEB-INF下的dispatcher-servlet.xml文件 3.2的springmvc </span></span><br><span class="line"><span class="comment">		加载DispatcherServlet-servlet.xml文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">	  <span class="comment">&lt;!-- 修改黑底springmvc加载的配置文件路径 --&gt;</span></span><br><span class="line">	  <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">	  <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:springmvc.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">load-on-startup</span>&gt;</span>1<span class="tag">&lt;/<span class="name">load-on-startup</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>DispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>*.do<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-安装Tomcat服务器："><a href="#1-安装Tomcat服务器：" class="headerlink" title="1.安装Tomcat服务器："></a>1.安装Tomcat服务器：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-安装Tomcat服务器：-1"><a href="#1-安装Tomcat服务器：-1" class="headerlink" title="1.安装Tomcat服务器："></a>1.安装Tomcat服务器：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-安装Tomcat服务器：-2"><a href="#1-安装Tomcat服务器：-2" class="headerlink" title="1.安装Tomcat服务器："></a>1.安装Tomcat服务器：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试Test"><a href="#测试Test" class="headerlink" title="测试Test"></a><strong>测试Test</strong></h2><h3 id="1-安装Tomcat服务器：-3"><a href="#1-安装Tomcat服务器：-3" class="headerlink" title="1.安装Tomcat服务器："></a>1.安装Tomcat服务器：</h3><ul>
+<li>安装一个名为mycat，端口8080改为13080的Tomcat服务器。<pre><code>$ docker run -d --name  mycat  -p 13080:8080 tomcat:8.0</code></pre></li>
+</ul>
+<h3 id="2-启动Tomcat："><a href="#2-启动Tomcat：" class="headerlink" title="2.启动Tomcat："></a>2.启动Tomcat：</h3><pre><code>$ docker start mycat</code></pre><h3 id="3-打开-http-kansuv-info-13080-来访问Tomcat-kansuv-info改为你的服务器域名或者IP-："><a href="#3-打开-http-kansuv-info-13080-来访问Tomcat-kansuv-info改为你的服务器域名或者IP-：" class="headerlink" title="3.打开 http://kansuv.info:13080 来访问Tomcat (kansuv.info改为你的服务器域名或者IP)："></a>3.打开 <a href="http://kansuv.info:13080" target="_blank" rel="noopener">http://kansuv.info:13080</a> 来访问Tomcat (kansuv.info改为你的服务器域名或者IP)：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-10-03T02:51:34.886Z" itemprop="dateUpdated">2019-10-03 10:51:34</time>
+</span><br>
+
+
+        
+        转载请与我联系并注明出处<a href="/2019/10/03/SSM-hj/" target="_blank" rel="external">http://baobaosb.github.io/2019/10/03/SSM-hj/</a>
+        
+    </div>
+    <footer>
+        <a href="http://baobaosb.github.io">
+            <img src="/img/avatar.jpg" alt="BaoBao">
+            BaoBao
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSM/">SSM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/idea/">idea</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/环境搭建/">环境搭建</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://baobaosb.github.io/2019/10/03/SSM-hj/&title=《SSM框架整合环境搭建》 — BaoBao&pic=http://baobaosb.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://baobaosb.github.io/2019/10/03/SSM-hj/&title=《SSM框架整合环境搭建》 — BaoBao&source=努力实现编程梦" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://baobaosb.github.io/2019/10/03/SSM-hj/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SSM框架整合环境搭建》 — BaoBao&url=http://baobaosb.github.io/2019/10/03/SSM-hj/&via=http://baobaosb.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://baobaosb.github.io/2019/10/03/SSM-hj/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/09/21/docker/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Docker安装与使用</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢投食~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>BaoBao &copy; 2018 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://baobaosb.github.io/2019/10/03/SSM-hj/&title=《SSM框架整合环境搭建》 — BaoBao&pic=http://baobaosb.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://baobaosb.github.io/2019/10/03/SSM-hj/&title=《SSM框架整合环境搭建》 — BaoBao&source=努力实现编程梦" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://baobaosb.github.io/2019/10/03/SSM-hj/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SSM框架整合环境搭建》 — BaoBao&url=http://baobaosb.github.io/2019/10/03/SSM-hj/&via=http://baobaosb.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://baobaosb.github.io/2019/10/03/SSM-hj/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNUlEQVR42u3au27jQAwF0Pz/TzvNFgsEI12ScqGZo8pAbGmOCoavn5/4+iyu//+6+v71Pau/Gl0YGBivZXwur9V3VkdJnvL3t/lzl1QMDIwDGNcBsXrc65B6DUuei4GBgXF9oMKtL4Np70VgYGBg9ELnPKQ+8MowMDAOYFQbar2QWi1Qv1KLY2BgvJAxKU2//fkr8w0MDIxXMT7FK0/vqt/snefffTAwMLZm5AFu1LKft9KC82BgYOzKeLaA7BWck1B+82AMDIyNGL2C9qkksnq3ZcDFwMA4gJGPBPI2WR6CJwscGBgYpzHyknXehstbdTevGwMDY2tGNQV8qmbspZ6PDTgxMDBexZgE2d7gs9fmu0lMMTAwjmFMwt8k0icF7U3SiYGBsTWjN0qshtok4DYbbZOJKAYGxksYebCbjASqq2b52AADA+MExrx9Vn0F1fQxH11gYGDsyugVqE+Fzuo9l0gMDIxjGE8th+Wj0EloXgZcDAyM7RhJ2tdLHKtD0LzN1yxrMTAwXs7I1yPK9fH4PnnQx8DAOIcxb5P1VjHyBYubriEGBsYBjOrCRLVMnSedN9siGBgY2zF6a155KjlfuYjYGBgYWzOqYS4fQObNu0nRW4ZhYGC8lpEH2TxE9pY2RgEXAwPjAEYeKPNiNS+G8/8AN3kuBgYGRnFscJ1cTpLIZdMNAwMDo7X4VV3LqI5FMTAwzmFMCtHeoefhGAMD4xxGr3TsLXv1Dv3YugYGBsb7GL9yLRkGwlAHWAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.13"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.13" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'BaoBao的博客！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎您!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
