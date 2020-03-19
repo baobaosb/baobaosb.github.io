@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://baobaosb.github.io/"/>
-  <updated>2019-11-16T10:16:35.837Z</updated>
+  <updated>2020-03-19T10:58:33.276Z</updated>
   <id>http://baobaosb.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows 10专业版激活方法</title>
+    <link href="http://baobaosb.github.io/2020/03/19/win%2010/"/>
+    <id>http://baobaosb.github.io/2020/03/19/win 10/</id>
+    <published>2020-03-19T11:00:21.545Z</published>
+    <updated>2020-03-19T10:58:33.276Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Windows-10专业版激活方法"><a href="#Windows-10专业版激活方法" class="headerlink" title="Windows 10专业版激活方法"></a><strong>Windows 10专业版激活方法</strong></h2><h3 id="1-我们无法在此设备上激活windows因为无法连接到你的组织的激活服务器"><a href="#1-我们无法在此设备上激活windows因为无法连接到你的组织的激活服务器" class="headerlink" title="1.我们无法在此设备上激活windows因为无法连接到你的组织的激活服务器"></a>1.我们无法在此设备上激活windows因为无法连接到你的组织的激活服务器</h3><p>到这个目录 C:\Windows\System32，找到cmd，右键管理员启动。<br>运行slmgr.vbs -skms zh.us.to<br>然后再打开激活，<br>填写激活码。<br>Windows 10专业版密钥为：W269N-WFGWX-YVC9B-4J6C9-T83GX</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Windows-10专业版激活方法&quot;&gt;&lt;a href=&quot;#Windows-10专业版激活方法&quot; class=&quot;headerlink&quot; title=&quot;Windows 10专业版激活方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;Windows 10专业版激活方法&lt;/strong&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="windows" scheme="http://baobaosb.github.io/categories/windows/"/>
+    
+    
+      <category term="Windows" scheme="http://baobaosb.github.io/tags/Windows/"/>
+    
+      <category term="激活" scheme="http://baobaosb.github.io/tags/%E6%BF%80%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>SSM框架整合环境搭建</title>
